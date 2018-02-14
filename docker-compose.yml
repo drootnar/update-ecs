@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  shell:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ipython
+    environment:
+      - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID_PYKONIK
+      - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY_PYKONIK
